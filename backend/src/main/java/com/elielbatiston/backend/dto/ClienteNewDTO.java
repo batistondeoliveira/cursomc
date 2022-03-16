@@ -2,28 +2,45 @@ package com.elielbatiston.backend.dto;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+
+import org.hibernate.validator.constraints.Length;
+
+import com.elielbatiston.backend.services.validation.ClienteInsert;
+
+@ClienteInsert
 public class ClienteNewDTO implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	@Length(min=5, max=120, message="O tamanho deve ser entre 5 e 120 caracteres")
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String nome;
 	
+	@Email(message="Email inválido")
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String email;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String cpfOuCnpj;
 	
 	private Integer tipo;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String logradouro;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String numero;
 	
 	private String complemento;
 	
 	private String bairro;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String cep;
 	
+	@NotEmpty(message="Preenchimento obrigatório")
 	private String telefone1;
 	
 	private String telefone2;
