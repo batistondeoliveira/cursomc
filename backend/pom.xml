@@ -4,9 +4,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.elielbatiston</groupId>
-	<artifactId>backend</artifactId>
+	<artifactId>cursomc-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
+	<name>cursomc-backend</name>
 	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
