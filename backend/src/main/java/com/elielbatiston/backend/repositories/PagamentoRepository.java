@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.elielbatiston.backend.domain.Pagamento;
 
 @Repository
-public interface PagamentoRepository extends JpaRepository<Pagamento, Serializable> {
+public interface PagamentoRepository extends JpaRepository<Pagamento, Integer> {
 
 }

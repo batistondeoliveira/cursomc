@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.elielbatiston.backend.domain.Cliente;
 
 @Repository
-public interface ClienteRepository extends JpaRepository<Cliente, Serializable> {
+public interface ClienteRepository extends JpaRepository<Cliente, Integer> {
 
 	@Transactional(readOnly=true)
 	Cliente findByEmail(String email);

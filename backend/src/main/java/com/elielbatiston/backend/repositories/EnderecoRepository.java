@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.elielbatiston.backend.domain.Endereco;
 
 @Repository
-public interface EnderecoRepository extends JpaRepository<Endereco, Serializable> {
+public interface EnderecoRepository extends JpaRepository<Endereco, Integer> {
 
 }

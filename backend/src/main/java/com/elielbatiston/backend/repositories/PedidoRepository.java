@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.elielbatiston.backend.domain.Pedido;
 
 @Repository
-public interface PedidoRepository extends JpaRepository<Pedido, Serializable> {
+public interface PedidoRepository extends JpaRepository<Pedido, Integer> {
 
 }

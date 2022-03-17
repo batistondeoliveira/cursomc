@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 import com.elielbatiston.backend.domain.Estado;
 
 @Repository
-public interface EstadoRepository extends JpaRepository<Estado, Serializable> {
+public interface EstadoRepository extends JpaRepository<Estado, Integer> {
 
 }
