@@ -3,8 +3,10 @@ package com.elielbatiston.backend.domain;
 import javax.persistence.Entity;
 
 import com.elielbatiston.backend.domain.enums.EstadoPagamento;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 @Entity
+@JsonTypeName("pagamentoComCartao")
 public class PagamentoComCartao extends Pagamento {
 
 	private static final long serialVersionUID = 1L;
