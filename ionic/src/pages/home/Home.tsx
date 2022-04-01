@@ -2,12 +2,13 @@ import { IonButton, IonContent, IonInput, IonItem, IonLabel } from "@ionic/react
 
 import './Home.css';
 
-const Page: React.FC = () => (
+const Home: React.FC = () => (
   <IonContent    
     scrollEvents={true}
     onIonScrollStart={() => {}}
     onIonScroll={() => {}}
     onIonScrollEnd={() => {}}
+    className="home"
   >
     <div style={{padding: '10px'}}>
       <h3>Sistema de pedidos</h3>
@@ -25,7 +26,7 @@ const Page: React.FC = () => (
           <IonInput type="password" />
         </IonItem>
 
-        <IonButton expand="block">Entrar</IonButton>
+        <IonButton expand="block" routerLink="/categorias">Entrar</IonButton>
       </form>
 
       <IonButton expand="block" fill="outline">Registrar</IonButton>
@@ -33,4 +34,4 @@ const Page: React.FC = () => (
   </IonContent>
 );
 
-export default Page;
+export default Home;

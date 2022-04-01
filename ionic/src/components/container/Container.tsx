@@ -14,7 +14,7 @@ const Container: React.FC<ContainerProps> = ({ header, children }: ContainerProp
       <Header title={title} to={to} />
 
       <IonContent fullscreen>
-        <div style={{padding: '0px 10px'}}>
+        <div style={{padding: '10px'}}>
           {children}
         </div>
       </IonContent>    

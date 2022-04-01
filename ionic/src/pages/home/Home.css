@@ -1,8 +1,8 @@
-h3 {
+.home h3 {
   text-align: center;
 }
 
-img {
+.home img {
   width: 200px;
   align-self: center;
   margin: auto;
