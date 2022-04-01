@@ -2,14 +2,14 @@ import { IonBackButton, IonButtons, IonHeader, IonTitle, IonToolbar } from "@ion
 
 export interface HeaderProps {
   title: string;
-  backTo: string;
+  to: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ title, backTo }: HeaderProps) => (
+const Header: React.FC<HeaderProps> = ({ title, to }: HeaderProps) => (
   <IonHeader>
     <IonToolbar color="tertiary">
       <IonButtons slot="start">
-        <IonBackButton defaultHref={backTo} />
+        <IonBackButton defaultHref={to} />
       </IonButtons> 
 
       <IonTitle style={{fontWeight: 'bold'}}>{title}</IonTitle>     
